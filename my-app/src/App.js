@@ -43,11 +43,26 @@ function App() {
   console.log(createComplimennt("Jay", "Welcome"));
 
   
-  function logAct(name = "Shane McConkey", act="skiing") {
+  function logAct1(name = "Shane McConkey", act="skiing") {
     console.log(`${name} loves ${act}`);
   }
 
-  logAct();
+  logAct1();
+
+  const defPerson = {
+    name: {
+      first: "Shane",
+      last: "McConkey"
+    },
+    favActivity: "skiing"
+  };
+
+  function logAct2(person = defPerson) {
+    console.log(`${person.name.first} ${person.name.last} loves ${person.favActivity}`);
+  }
+
+  logAct2();
+
   
   return (
     <div className="App">
