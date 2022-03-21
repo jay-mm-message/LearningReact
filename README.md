@@ -27,3 +27,7 @@ You can eject the project with below command
 
 # yarn eject
 
+FIX: This bug probably would be resolved soon. For now,
+ simply run a package upgrade then start the app again:
+
+# yarn upgrade
