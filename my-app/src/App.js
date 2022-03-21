@@ -113,6 +113,20 @@ function App() {
     console.log(person("Flad", "Hanson"));
   }
 
+  { /* used by {} disconstruct */
+    
+    const lordly = ({firstname}) => {
+      console.log(`${firstname} of Canterbury`);
+    }
+
+    const person = {
+      firstname: "Bill",
+      lastname: "Willson"
+    };
+ 
+    lordly(person);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
