@@ -135,6 +135,14 @@ function App() {
     console.log(thirdAnimal);
   }
 
+  {
+    const peaks = ["Tallac", "Ralston", "Rose"];
+    const canyons = ["Ward", "Blackwood"];
+    const tahoe = [...peaks, ...canyons];
+
+    console.log(tahoe.join(", "));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
