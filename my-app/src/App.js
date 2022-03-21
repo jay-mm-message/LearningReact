@@ -4,11 +4,13 @@ import './App.css';
 function App() {
   
   var pizza = true;
-  console.log("pizza: " + pizza);
+  //console.log("pizza: " + pizza);
+  logd("pizza: " + pizza);
 
   {
     let apple = true;
-    console.log("apple: " + apple);
+    //console.log("apple: " + apple);
+    logd("apple: " + apple);
   }
   // Lexical Variable Scope
   // console.log("apple: " + apple);
@@ -17,9 +19,13 @@ function App() {
     //alert("The remnants: " + i);
     let lastName = "Jay";
     let firstName = " !";
-    console.log(`${i}: ${lastName}, ${firstName}`);
+    //console.log(`${i}: ${lastName}, ${firstName}`);
+    logd(`${i}: ${lastName}, ${firstName}`);
   }
 
+  function logd(msg) {
+    console.log(msg);
+  }
 
   return (
     <div className="App">
@@ -27,9 +33,8 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
         <p>
-          My first app for react-native
+          My first app for react-native.
         </p>
-
 
         {/* node */}
         {/* <p>
