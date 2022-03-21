@@ -14,7 +14,10 @@ function App() {
   // console.log("apple: " + apple);
 
   for(let i = 5 ; i >= 0 ; --i) {
-    alert("The remnants: " + i);
+    //alert("The remnants: " + i);
+    let lastName = "Jay";
+    let firstName = " !";
+    console.log(`${i}: ${lastName}, ${firstName}`);
   }
 
 
