@@ -143,6 +143,13 @@ function App() {
     console.log(tahoe.join(", "));
   }
 
+  {
+    const peaks = ["Tallac", "Ralston", "Rose"];
+    console.log(peaks.join(", "));
+    peaks.reverse();
+    console.log(peaks.join(", "));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
