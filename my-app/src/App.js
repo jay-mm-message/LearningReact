@@ -35,6 +35,13 @@ function App() {
     console.log(msg);
   }
 
+  // function expression returns a string
+  const createComplimennt = function(fistname, mesesage) {
+    return `${mesesage}, ${fistname}`;
+  }
+
+  console.log(createComplimennt("Jay", "Welcome"));
+
   return (
     <div className="App">
       <header className="App-header">
