@@ -13,6 +13,11 @@ function App() {
   // Lexical Variable Scope
   // console.log("apple: " + apple);
 
+  for(let i = 5 ; i >= 0 ; --i) {
+    alert("The remnants: " + i);
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
