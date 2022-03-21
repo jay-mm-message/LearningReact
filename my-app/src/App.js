@@ -150,6 +150,15 @@ function App() {
     console.log(peaks.join(", "));
   }
 
+  {
+    const peaks = ["Tallac", "Ralston", "Rose"];
+    console.log(peaks.join(", "));
+    const rpeaks = [...peaks].reverse();
+    console.log(peaks.join(", "));
+    console.log(rpeaks.join(", "));
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
