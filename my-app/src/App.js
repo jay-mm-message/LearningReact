@@ -3,24 +3,32 @@ import './App.css';
 
 function App() {
   
+  // Function Expressions
+  const logE = function(msg) {
+    console.log(msg);
+  }
+
   var pizza = true;
   //console.log("pizza: " + pizza);
   logd("pizza: " + pizza);
+  logE("pizza: " + pizza);
 
   {
     let apple = true;
     //console.log("apple: " + apple);
     logd("apple: " + apple);
+    logE("apple: " + apple);
   }
   // Lexical Variable Scope
   // console.log("apple: " + apple);
-
+    
   for(let i = 1; i >= 0 ; --i) {
     //alert("The remnants: " + i);
     let lastName = "Jay";
     let firstName = " !";
     //console.log(`${i}: ${lastName}, ${firstName}`);
     logd(`${i}: ${lastName}, ${firstName}`);
+    logE(`${i}: ${lastName}, ${firstName}`);
   }
 
   function logd(msg) {
