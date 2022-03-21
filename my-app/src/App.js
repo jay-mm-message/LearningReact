@@ -89,6 +89,19 @@ function App() {
     console.log("test return: " + lordlyB("Jay"));
   }
 
+  {
+    const lordly = (firstname, land) => {
+      if (!firstname) {
+        throw new Error("A first name is required to lordly");
+      }
+      if (!land) {
+        throw new Error("A lord must have a land");
+      }
+      return `${firstname} of ${land}`;
+    }
+    
+    console.log(lordly("Kelly", "Sonoma"));
+  }
   
   return (
     <div className="App">
