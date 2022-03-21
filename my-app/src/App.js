@@ -2,8 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
+  
   var pizza = true;
+  console.log("pizza: " + pizza);
 
   return (
     <div className="App">
