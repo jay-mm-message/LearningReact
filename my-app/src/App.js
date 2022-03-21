@@ -127,6 +127,14 @@ function App() {
     lordly(person);
   }
 
+  { /* array used by {} disconstruct */
+    const [firstAnimal] = ["Horse", "Cat", "Dog"];
+    console.log(firstAnimal);
+
+    const[, ,thirdAnimal] = ["Horse", "Cat", "Dog"];
+    console.log(thirdAnimal);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
