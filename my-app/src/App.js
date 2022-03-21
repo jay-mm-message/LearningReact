@@ -63,6 +63,19 @@ function App() {
 
   logAct2();
 
+  {
+    const lordlyA = function(firstname) {
+      console.log(`${firstname} of Canterbury`);
+    }
+ /* arror function */
+    const lordlyB = firstname => {
+      console.log(`${firstname} of Canterbury`);
+    };
+  
+    lordlyA("Jay");
+    lordlyB("Jay");
+  }
+
   
   return (
     <div className="App">
