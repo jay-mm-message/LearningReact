@@ -103,6 +103,16 @@ function App() {
     console.log(lordly("Kelly", "Sonoma"));
   }
   
+   /* new object for react-native */
+  {
+    const person = (firstname, lastname) => ({
+      first: firstname,
+      last: lastname
+    });
+
+    console.log(person("Flad", "Hanson"));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
