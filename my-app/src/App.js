@@ -6,6 +6,13 @@ function App() {
   var pizza = true;
   console.log("pizza: " + pizza);
 
+  {
+    let apple = true;
+    console.log("apple: " + apple);
+  }
+  // Lexical Variable Scope
+  // console.log("apple: " + apple);
+
   return (
     <div className="App">
       <header className="App-header">
