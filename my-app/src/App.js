@@ -76,6 +76,19 @@ function App() {
     lordlyB("Jay");
   }
 
+  /* return */
+  {
+    const lordlyA = function(firstname) {
+      return `${firstname} of Canterbury`;
+    }
+
+    /* arrow function return  */
+    const lordlyB = firstname => `${firstname} of Canterbury`;
+
+    console.log("test return: " + lordlyA("Jay"));
+    console.log("test return: " + lordlyB("Jay"));
+  }
+
   
   return (
     <div className="App">
