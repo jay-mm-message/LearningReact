@@ -15,7 +15,7 @@ function App() {
   // Lexical Variable Scope
   // console.log("apple: " + apple);
 
-  for(let i = 5 ; i >= 0 ; --i) {
+  for(let i = 1; i >= 0 ; --i) {
     //alert("The remnants: " + i);
     let lastName = "Jay";
     let firstName = " !";
