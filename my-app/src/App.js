@@ -42,6 +42,13 @@ function App() {
 
   console.log(createComplimennt("Jay", "Welcome"));
 
+  
+  function logAct(name = "Shane McConkey", act="skiing") {
+    console.log(`${name} loves ${act}`);
+  }
+
+  logAct();
+  
   return (
     <div className="App">
       <header className="App-header">
