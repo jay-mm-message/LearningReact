@@ -49,20 +49,6 @@ const insideFn = logger => {
 insideFn(message => console.log(message));
 p();
 
-// const createScream = function(logger) {
-//   console.log(typeof(logger));
-//   return function(message) {
-//     console.log(typeof(message));
-//     logger(message.toUpperCase() + "!!!");
-//   };
-// };
-
-// const scream = createScream(message => console.log(message));
-
-// scream("functions can be returned from other functions");
-// scream("createScream returns a function");
-// scream("scream invokes that returned function");
-
 // review function argument
 const add = (a, b) => {
   return a + b;
@@ -122,6 +108,30 @@ const insideFunc = func => {
 }
 
 insideFunc(message => console.log(message));
+p();
+
+// const createScream = (Xargs) => {
+//   return (Yargs) => {
+//     Xargs(Yargs.toUpperCase());
+//   };
+// };
+
+// const scream = createScream(message => console.log(message));
+
+// scream("functions can be returned from other functions");
+// scream("createScream returns a function");
+// scream("scream invokes that returned function");
+const CFun = (Xargs) => {
+  return (Yargs) => {
+    Xargs(Yargs.toUpperCase());
+  };
+};
+
+const scream = CFun(msg => console.log(msg));
+
+scream("iii");
+scream("jjj");
+scream("kkk");
 p();
 
 
