@@ -186,9 +186,15 @@ function App() {
 
   console.log("\nnew line");
   const getFakePerson = async() => {
-    let ret = await fetch(randomMe);
-    let { results } = await ret.json();
-    console.log(results);
+    try {
+      console.log("\nbegin");
+      let ret = await fetch(randomMe);
+      let { results } = await ret.json();
+      console.log(results);
+      console.log("\nfinish");  
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   getFakePerson();
