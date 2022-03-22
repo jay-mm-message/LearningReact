@@ -88,6 +88,19 @@ console.log(person("Herry", "John"));
 p();
 
 
+// destructuring assignment
+const sandwich = {
+  a1: "12345",
+  a2: "xxxx",
+  a3: "yyy",
+  a4: "ggg",
+  a5: "zzzzz"
+};
+
+const { a2, a3 } = sandwich;
+console.log(a2, a3);
+
+
 
 function App() {
   return (
