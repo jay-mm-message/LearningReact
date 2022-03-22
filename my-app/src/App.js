@@ -165,6 +165,14 @@ function App() {
     console.log(other.join(", "));
   }
 
+  { // much parameter
+
+    function directions(...args) {
+      console.log(args.join(", "));
+    }
+
+    directions("Truchee", "Tahoe City", "Sunnyside", "Homewood", "Tahoma");
+  }
 
   return (
     <div className="App">
