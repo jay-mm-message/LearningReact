@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 
+var exampleNo = 0;
 var p = () => {
-  console.log("\nNew Line:");
+  ++exampleNo;
+  console.log(`New Line: ${exampleNo} \n`);
 }
 
 var msg = "In JavaScript, functions are veriables";
