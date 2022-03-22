@@ -49,6 +49,21 @@ const insideFn = logger => {
 insideFn(message => console.log(message));
 p();
 
+// const createScream = function(logger) {
+//   console.log(typeof(logger));
+//   return function(message) {
+//     console.log(typeof(message));
+//     logger(message.toUpperCase() + "!!!");
+//   };
+// };
+
+// const scream = createScream(message => console.log(message));
+
+// scream("functions can be returned from other functions");
+// scream("createScream returns a function");
+// scream("scream invokes that returned function");
+
+
 function App() {
   return (
     <div className="App">
