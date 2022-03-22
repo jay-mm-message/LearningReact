@@ -101,20 +101,20 @@ const { a2, a3 } = sandwich;
 console.log(a2, a3);
 p();
 
-// const getFakePerson = async() => {
-//   let url = "https://api.randomuser.me/?nat=US&results=1";
-//   let res = await fetch(url);
-//   let {results} = await res.json();
-//   console.log(results);
-// }
+const getFakePerson = async() => {
+  let url = "https://api.randomuser.me/?nat=US&results=1";
+  let res = await fetch(url);
+  let {results} = await res.json();
+  console.log(results);
+}
 
-// getFakePerson();
-// p();
+getFakePerson();
+p();
 
 
-// const func = (message) => {
-//   console.log(`func: ${message}`);
-// }
+const func = (message) => {
+  console.log(`func: ${message}`);
+}
 
 var msg = "yyy";
 const insideFunc = func => {
