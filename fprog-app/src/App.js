@@ -135,6 +135,24 @@ scream("kkk");
 p();
 
 
+const string = "x y z";
+var url = "";
+// normal
+for(let i = 0 ; i < string.length ; ++i) {
+  if (string[i] === ' ') {
+    url += '-';
+  } else {
+    url += string[i];
+  }
+}
+console.log(url);
+
+//  Declarative Programming
+url = string.replace(/ /g, '_');
+console.log(url);
+
+p();
+
 function App() {
   return (
     <div className="App">
