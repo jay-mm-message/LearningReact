@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
 
 var exampleNo = 0;
 var p = () => {
@@ -150,13 +151,25 @@ console.log(url);
 //  Declarative Programming
 url = string.replace(/ /g, '_');
 console.log(url);
-
 p();
 
+
+// const { render } = ReactDOM;
+
+// const Welcome = () => {
+//   <div id ="Welcome">
+//     <hi>Hello World</hi>
+//   </div>
+// };
+
+// render(<Welcome />, document.getElementById("target"));
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header">     
+
       <p> 
         Functional Programming with JavaScript.
       </p>
