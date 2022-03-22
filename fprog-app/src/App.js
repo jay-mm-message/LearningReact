@@ -72,6 +72,22 @@ let a = 100, b = 200;
 console.log(`${a} + ${b} = ${add(a, b)}`);
 p();
 
+// object
+const obj2 = (n, g) => ({
+  name: n,
+  age: g
+});
+
+console.log(obj2("Herry", 5));
+
+const person = (firstName, lastName) => ({
+  first: firstName,
+  last: lastName
+});
+console.log(person("Herry", "John"));
+p();
+
+
 
 function App() {
   return (
