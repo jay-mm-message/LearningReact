@@ -174,7 +174,30 @@ function App() {
     directions("Truchee", "Tahoe City", "Sunnyside", "Homewood", "Tahoma");
   }
 
-  return (
+  var randomMe = "https://api.randomuser.me/?net=US&results=1";
+  //console.log(fetch(randomMe));
+  // console.log("\nnew line");
+  // fetch(randomMe)
+  //   .then(res => res.json())
+  //   .then(json => json.results)
+  //   .then(console.log)
+  //   .catch(console.error)
+
+
+  console.log("\nnew line");
+  const getFakePerson = async() => {
+    let ret = await fetch(randomMe);
+    let { results } = await ret.json();
+    console.log(results);
+  };
+
+  getFakePerson();
+
+
+
+
+
+    return (
     <div className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
