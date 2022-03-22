@@ -63,6 +63,15 @@ p();
 // scream("createScream returns a function");
 // scream("scream invokes that returned function");
 
+// review function argument
+const add = (a, b) => {
+  return a + b;
+}
+
+let a = 100, b = 200;
+console.log(`${a} + ${b} = ${add(a, b)}`);
+p();
+
 
 function App() {
   return (
