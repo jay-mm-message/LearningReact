@@ -200,7 +200,25 @@ function App() {
   getFakePerson();
 
 
+  console.log("\n getPeople new line");
+  const getPeople = count =>
+    new Promise((resolves, rejects) => {
+      const url = `https://api.randomuser.me/?nat=US&results=${count}`;
+      const request = new XMLHttpRequest();
+      request.open("GET", url);
+      request.onload = () => 
+        request.status === 200
+          ? resolves(JSON.parse(request.response).results)
+          : rejects(Error(request.statusText));
+      request.onerror = err => rejects(err);
+      request.send();
+      
+    });
 
+  getPeople(5)
+    .then(member => console.log(member))
+    .catch(error => 
+       console.error(`getPeople failed: ${error.mesesage}`));
 
 
     return (
