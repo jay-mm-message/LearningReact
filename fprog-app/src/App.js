@@ -99,7 +99,17 @@ const sandwich = {
 
 const { a2, a3 } = sandwich;
 console.log(a2, a3);
+p();
 
+const getFakePerson = async() => {
+  let url = "https://api.randomuser.me/?nat=US&results=1";
+  let res = await fetch(url);
+  let {results} = await res.json();
+  console.log(results);
+}
+
+getFakePerson();
+p();
 
 
 function App() {
