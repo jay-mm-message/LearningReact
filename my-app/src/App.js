@@ -158,6 +158,13 @@ function App() {
     console.log(rpeaks.join(", "));
   }
 
+  { // get remain
+    const lakes = ["Donner", "Marlette", "Fall Leaf", "Cascade"];
+    const [finish, ...other] = lakes.reverse();
+
+    console.log(other.join(", "));
+  }
+
 
   return (
     <div className="App">
