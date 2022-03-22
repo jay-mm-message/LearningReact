@@ -27,6 +27,19 @@ const obj = {
 
 obj.message = "Welcome";
 obj.log3(obj.message);
+p();
+
+const funcA = [
+  "They can be inserted into array",
+  message => log(message),
+  "like variables",
+  message => log(message)
+];
+
+funcA[1](funcA[0]);
+funcA[3](funcA[2]);
+p();
+
 
 function App() {
   return (
