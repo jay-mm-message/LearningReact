@@ -42,6 +42,12 @@ funcA[1](funcA[0]);
 funcA[3](funcA[2]);
 p();
 
+const insideFn = logger => {
+  logger("They can be sent to other functions as arguments");
+  console.log(logger);
+};
+insideFn(message => console.log(message));
+p();
 
 function App() {
   return (
