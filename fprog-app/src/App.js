@@ -164,6 +164,30 @@ p();
 
 // render(<Welcome />, document.getElementById("target"));
 
+// copy right
+const Box = {
+  type: "Apple box",
+  size: 10
+};
+
+const MacBox = (box, t, sz) => ({
+  ...box,
+  type: t,
+  size: sz
+});
+
+const IphoneBox = (box, t, sz) => ({
+  ...box,
+  type: t,
+  size: sz
+});
+
+console.log(Box);
+console.log(MacBox(Box, "mac", 20));
+console.log(IphoneBox(Box, "iphone", 8));
+p();
+
+
 function App() {
 
   return (
